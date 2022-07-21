@@ -342,7 +342,15 @@ It is meant to be used as an exchange type at the managed/unmanaged boundary to 
         <param name="x">To be added.</param>
         <summary>Computes the arc-cosine of a value.</summary>
         <returns>The arc-cosine of <paramref name="x" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This computes `arccos(x)` in the interval `[+0, +π]` radians.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Acosh">
@@ -373,6 +381,42 @@ It is meant to be used as an exchange type at the managed/unmanaged boundary to 
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="AcosPi">
+      <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.NFloat AcosPi (System.Runtime.InteropServices.NFloat x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.InteropServices.NFloat AcosPi(valuetype System.Runtime.InteropServices.NFloat x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.NFloat.AcosPi(System.Runtime.InteropServices.NFloat)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AcosPi (x As NFloat) As NFloat" />
+      <MemberSignature Language="F#" Value="static member AcosPi : System.Runtime.InteropServices.NFloat -&gt; System.Runtime.InteropServices.NFloat" Usage="System.Runtime.InteropServices.NFloat.AcosPi x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::InteropServices::NFloat AcosPi(System::Runtime::InteropServices::NFloat x) = System::Numerics::ITrigonometricFunctions&lt;System::Runtime::InteropServices::NFloat&gt;::AcosPi;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Numerics.ITrigonometricFunctions`1.AcosPi(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.NFloat</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Runtime.InteropServices.NFloat" Index="0" FrameworkAlternate="net-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <summary>Computes the arc-cosine of a value and divides the result by <c>pi</c>.</summary>
+        <returns>The arc-cosine of <paramref name="x" />, divided by <c>pi</c>.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This computes `arccos(x) / π` in the interval `[-0.5, +0.5]`.
+
+          ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Asin">
       <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.NFloat Asin (System.Runtime.InteropServices.NFloat x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.InteropServices.NFloat Asin(valuetype System.Runtime.InteropServices.NFloat x) cil managed" />
@@ -398,7 +442,15 @@ It is meant to be used as an exchange type at the managed/unmanaged boundary to 
         <param name="x">To be added.</param>
         <summary>Computes the arc-sine of a value.</summary>
         <returns>The arc-sine of <paramref name="x" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This computes `arcsin(x)` in the interval `[-π / 2, +π / 2]` radians.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Asinh">
@@ -429,6 +481,42 @@ It is meant to be used as an exchange type at the managed/unmanaged boundary to 
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="AsinPi">
+      <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.NFloat AsinPi (System.Runtime.InteropServices.NFloat x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.InteropServices.NFloat AsinPi(valuetype System.Runtime.InteropServices.NFloat x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.NFloat.AsinPi(System.Runtime.InteropServices.NFloat)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AsinPi (x As NFloat) As NFloat" />
+      <MemberSignature Language="F#" Value="static member AsinPi : System.Runtime.InteropServices.NFloat -&gt; System.Runtime.InteropServices.NFloat" Usage="System.Runtime.InteropServices.NFloat.AsinPi x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::InteropServices::NFloat AsinPi(System::Runtime::InteropServices::NFloat x) = System::Numerics::ITrigonometricFunctions&lt;System::Runtime::InteropServices::NFloat&gt;::AsinPi;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Numerics.ITrigonometricFunctions`1.AsinPi(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.NFloat</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Runtime.InteropServices.NFloat" Index="0" FrameworkAlternate="net-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <summary>Computes the arc-sine of a value and divides the result by <c>pi</c>.</summary>
+        <returns>The arc-sine of <paramref name="x" />, divided by <c>pi</c>.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This computes `arcsin(x) / π` in the interval `[-0.5, +0.5]`.
+
+          ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Atan">
       <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.NFloat Atan (System.Runtime.InteropServices.NFloat x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.InteropServices.NFloat Atan(valuetype System.Runtime.InteropServices.NFloat x) cil managed" />
@@ -454,7 +542,15 @@ It is meant to be used as an exchange type at the managed/unmanaged boundary to 
         <param name="x">To be added.</param>
         <summary>Computes the arc-tangent of a value.</summary>
         <returns>The arc-tangent of <paramref name="x" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This computes `arctan(x)` in the interval `[-π / 2, +π / 2]` radians.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Atan2">
@@ -484,7 +580,53 @@ It is meant to be used as an exchange type at the managed/unmanaged boundary to 
         <param name="x">To be added.</param>
         <summary>Computes the arc-tangent of the quotient of two values.</summary>
         <returns>The arc-tangent of <paramref name="y" /> divided-by <paramref name="x" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This computes `arctan(y / x)` in the interval `[-π, +π]` radians.
+
+          ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Atan2Pi">
+      <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.NFloat Atan2Pi (System.Runtime.InteropServices.NFloat y, System.Runtime.InteropServices.NFloat x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.InteropServices.NFloat Atan2Pi(valuetype System.Runtime.InteropServices.NFloat y, valuetype System.Runtime.InteropServices.NFloat x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.NFloat.Atan2Pi(System.Runtime.InteropServices.NFloat,System.Runtime.InteropServices.NFloat)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Atan2Pi (y As NFloat, x As NFloat) As NFloat" />
+      <MemberSignature Language="F#" Value="static member Atan2Pi : System.Runtime.InteropServices.NFloat * System.Runtime.InteropServices.NFloat -&gt; System.Runtime.InteropServices.NFloat" Usage="System.Runtime.InteropServices.NFloat.Atan2Pi (y, x)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::InteropServices::NFloat Atan2Pi(System::Runtime::InteropServices::NFloat y, System::Runtime::InteropServices::NFloat x) = System::Numerics::ITrigonometricFunctions&lt;System::Runtime::InteropServices::NFloat&gt;::Atan2Pi;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Numerics.ITrigonometricFunctions`1.Atan2Pi(`0,`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.NFloat</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="y" Type="System.Runtime.InteropServices.NFloat" Index="0" FrameworkAlternate="net-7.0" />
+        <Parameter Name="x" Type="System.Runtime.InteropServices.NFloat" Index="1" FrameworkAlternate="net-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="y">To be added.</param>
+        <param name="x">To be added.</param>
+        <summary>Computes the arc-tangent for the quotient of two values and divides the result by <c>pi</c>.</summary>
+        <returns>The arc-tangent of <paramref name="y" /> divided-by <paramref name="x" />, divided by <c>pi</c>.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This computes `arctan(y / x) / π` in the interval `[-1, +1]`.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Atanh">
@@ -513,6 +655,42 @@ It is meant to be used as an exchange type at the managed/unmanaged boundary to 
         <summary>Computes the hyperbolic arc-tangent of a value.</summary>
         <returns>The hyperbolic arc-tangent of <paramref name="x" />.</returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AtanPi">
+      <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.NFloat AtanPi (System.Runtime.InteropServices.NFloat x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.InteropServices.NFloat AtanPi(valuetype System.Runtime.InteropServices.NFloat x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.NFloat.AtanPi(System.Runtime.InteropServices.NFloat)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AtanPi (x As NFloat) As NFloat" />
+      <MemberSignature Language="F#" Value="static member AtanPi : System.Runtime.InteropServices.NFloat -&gt; System.Runtime.InteropServices.NFloat" Usage="System.Runtime.InteropServices.NFloat.AtanPi x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::InteropServices::NFloat AtanPi(System::Runtime::InteropServices::NFloat x) = System::Numerics::ITrigonometricFunctions&lt;System::Runtime::InteropServices::NFloat&gt;::AtanPi;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Numerics.ITrigonometricFunctions`1.AtanPi(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.NFloat</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Runtime.InteropServices.NFloat" Index="0" FrameworkAlternate="net-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <summary>Computes the arc-tangent of a value and divides the result by pi.</summary>
+        <returns>The arc-tangent of <paramref name="x" />, divided by <c>pi</c>.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This computes `arctan(x) / π` in the interval `[-0.5, +0.5]`.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BitDecrement">
@@ -758,12 +936,12 @@ It is meant to be used as an exchange type at the managed/unmanaged boundary to 
       </Docs>
     </Member>
     <Member MemberName="CopySign">
-      <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.NFloat CopySign (System.Runtime.InteropServices.NFloat x, System.Runtime.InteropServices.NFloat y);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.InteropServices.NFloat CopySign(valuetype System.Runtime.InteropServices.NFloat x, valuetype System.Runtime.InteropServices.NFloat y) cil managed" />
+      <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.NFloat CopySign (System.Runtime.InteropServices.NFloat value, System.Runtime.InteropServices.NFloat sign);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.InteropServices.NFloat CopySign(valuetype System.Runtime.InteropServices.NFloat value, valuetype System.Runtime.InteropServices.NFloat sign) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.NFloat.CopySign(System.Runtime.InteropServices.NFloat,System.Runtime.InteropServices.NFloat)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CopySign (x As NFloat, y As NFloat) As NFloat" />
-      <MemberSignature Language="F#" Value="static member CopySign : System.Runtime.InteropServices.NFloat * System.Runtime.InteropServices.NFloat -&gt; System.Runtime.InteropServices.NFloat" Usage="System.Runtime.InteropServices.NFloat.CopySign (x, y)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::InteropServices::NFloat CopySign(System::Runtime::InteropServices::NFloat x, System::Runtime::InteropServices::NFloat y) = System::Numerics::INumber&lt;System::Runtime::InteropServices::NFloat&gt;::CopySign;" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CopySign (value As NFloat, sign As NFloat) As NFloat" />
+      <MemberSignature Language="F#" Value="static member CopySign : System.Runtime.InteropServices.NFloat * System.Runtime.InteropServices.NFloat -&gt; System.Runtime.InteropServices.NFloat" Usage="System.Runtime.InteropServices.NFloat.CopySign (value, sign)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::InteropServices::NFloat CopySign(System::Runtime::InteropServices::NFloat value, System::Runtime::InteropServices::NFloat sign) = System::Numerics::INumber&lt;System::Runtime::InteropServices::NFloat&gt;::CopySign;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Numerics.INumber`1.CopySign(`0,`0)</InterfaceMember>
@@ -776,12 +954,12 @@ It is meant to be used as an exchange type at the managed/unmanaged boundary to 
         <ReturnType>System.Runtime.InteropServices.NFloat</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Runtime.InteropServices.NFloat" Index="0" FrameworkAlternate="net-7.0" />
-        <Parameter Name="y" Type="System.Runtime.InteropServices.NFloat" Index="1" FrameworkAlternate="net-7.0" />
+        <Parameter Name="value" Type="System.Runtime.InteropServices.NFloat" Index="0" FrameworkAlternate="net-7.0" />
+        <Parameter Name="sign" Type="System.Runtime.InteropServices.NFloat" Index="1" FrameworkAlternate="net-7.0" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="sign">To be added.</param>
         <summary>Copies the sign of a value to the sign of another value..</summary>
         <returns>A value with the magnitude of <paramref name="value" /> and the sign of <paramref name="sign" />.</returns>
         <remarks>To be added.</remarks>
@@ -812,7 +990,15 @@ It is meant to be used as an exchange type at the managed/unmanaged boundary to 
         <param name="x">To be added.</param>
         <summary>Computes the cosine of a value.</summary>
         <returns>The cosine of <paramref name="x" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This computes `cos(x)`.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cosh">
@@ -841,6 +1027,42 @@ It is meant to be used as an exchange type at the managed/unmanaged boundary to 
         <summary>Computes the hyperbolic cosine of a value.</summary>
         <returns>The hyperbolic cosine of <paramref name="x" />.</returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CosPi">
+      <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.NFloat CosPi (System.Runtime.InteropServices.NFloat x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.InteropServices.NFloat CosPi(valuetype System.Runtime.InteropServices.NFloat x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.NFloat.CosPi(System.Runtime.InteropServices.NFloat)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CosPi (x As NFloat) As NFloat" />
+      <MemberSignature Language="F#" Value="static member CosPi : System.Runtime.InteropServices.NFloat -&gt; System.Runtime.InteropServices.NFloat" Usage="System.Runtime.InteropServices.NFloat.CosPi x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::InteropServices::NFloat CosPi(System::Runtime::InteropServices::NFloat x) = System::Numerics::ITrigonometricFunctions&lt;System::Runtime::InteropServices::NFloat&gt;::CosPi;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Numerics.ITrigonometricFunctions`1.CosPi(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.NFloat</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Runtime.InteropServices.NFloat" Index="0" FrameworkAlternate="net-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <summary>Computes the cosine of a value that has been multipled by <c>pi</c>.</summary>
+        <returns>The cosine of <paramref name="x" /> multiplied-by <c>pi</c>.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This computes `cos(x * π)`.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="E">
@@ -1224,9 +1446,40 @@ It is meant to be used as an exchange type at the managed/unmanaged boundary to 
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
+      <Parameters />
       <Docs>
         <summary>Returns the hash code for this instance.</summary>
         <returns>A 32-bit signed integer hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hypot">
+      <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.NFloat Hypot (System.Runtime.InteropServices.NFloat x, System.Runtime.InteropServices.NFloat y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.InteropServices.NFloat Hypot(valuetype System.Runtime.InteropServices.NFloat x, valuetype System.Runtime.InteropServices.NFloat y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.NFloat.Hypot(System.Runtime.InteropServices.NFloat,System.Runtime.InteropServices.NFloat)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Hypot (x As NFloat, y As NFloat) As NFloat" />
+      <MemberSignature Language="F#" Value="static member Hypot : System.Runtime.InteropServices.NFloat * System.Runtime.InteropServices.NFloat -&gt; System.Runtime.InteropServices.NFloat" Usage="System.Runtime.InteropServices.NFloat.Hypot (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::InteropServices::NFloat Hypot(System::Runtime::InteropServices::NFloat x, System::Runtime::InteropServices::NFloat y) = System::Numerics::IRootFunctions&lt;System::Runtime::InteropServices::NFloat&gt;::Hypot;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Numerics.IRootFunctions`1.Hypot(`0,`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.NFloat</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Runtime.InteropServices.NFloat" Index="0" FrameworkAlternate="net-7.0" />
+        <Parameter Name="y" Type="System.Runtime.InteropServices.NFloat" Index="1" FrameworkAlternate="net-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>Computes the hypotenuse given two values representing the lengths of the shorter sides in a right-angled triangle.</summary>
+        <returns>The square root of <paramref name="x" />-squared plus <paramref name="y" />-squared.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4149,6 +4402,36 @@ For <xref:System.Numerics.IFloatingPoint%601> this method matches the IEEE 754:2
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Root">
+      <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.NFloat Root (System.Runtime.InteropServices.NFloat x, int n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.InteropServices.NFloat Root(valuetype System.Runtime.InteropServices.NFloat x, int32 n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.NFloat.Root(System.Runtime.InteropServices.NFloat,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Root (x As NFloat, n As Integer) As NFloat" />
+      <MemberSignature Language="F#" Value="static member Root : System.Runtime.InteropServices.NFloat * int -&gt; System.Runtime.InteropServices.NFloat" Usage="System.Runtime.InteropServices.NFloat.Root (x, n)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::InteropServices::NFloat Root(System::Runtime::InteropServices::NFloat x, int n) = System::Numerics::IRootFunctions&lt;System::Runtime::InteropServices::NFloat&gt;::Root;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Numerics.IRootFunctions`1.Root(`0,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.NFloat</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Runtime.InteropServices.NFloat" Index="0" FrameworkAlternate="net-7.0" />
+        <Parameter Name="n" Type="System.Int32" Index="1" FrameworkAlternate="net-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="n">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Round">
       <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.NFloat Round (System.Runtime.InteropServices.NFloat x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.InteropServices.NFloat Round(valuetype System.Runtime.InteropServices.NFloat x) cil managed" />
@@ -4360,7 +4643,15 @@ It is recommended that a function return `1`, `0`, and `-1`, respectively.
         <param name="x">To be added.</param>
         <summary>Computes the sine of a value.</summary>
         <returns>The sine of <paramref name="x" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This computes `sin(x)`.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SinCos">
@@ -4394,7 +4685,15 @@ It is recommended that a function return `1`, `0`, and `-1`, respectively.
         <param name="x">To be added.</param>
         <summary>Computes the sine and cosine of a value.</summary>
         <returns>The sine and cosine of <paramref name="x" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This computes `(sin(x), cos(x))`.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sinh">
@@ -4423,6 +4722,42 @@ It is recommended that a function return `1`, `0`, and `-1`, respectively.
         <summary>Computes the hyperbolic sine of a value.</summary>
         <returns>The hyperbolic sine of <paramref name="x" />.</returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SinPi">
+      <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.NFloat SinPi (System.Runtime.InteropServices.NFloat x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.InteropServices.NFloat SinPi(valuetype System.Runtime.InteropServices.NFloat x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.NFloat.SinPi(System.Runtime.InteropServices.NFloat)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SinPi (x As NFloat) As NFloat" />
+      <MemberSignature Language="F#" Value="static member SinPi : System.Runtime.InteropServices.NFloat -&gt; System.Runtime.InteropServices.NFloat" Usage="System.Runtime.InteropServices.NFloat.SinPi x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::InteropServices::NFloat SinPi(System::Runtime::InteropServices::NFloat x) = System::Numerics::ITrigonometricFunctions&lt;System::Runtime::InteropServices::NFloat&gt;::SinPi;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Numerics.ITrigonometricFunctions`1.SinPi(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.NFloat</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Runtime.InteropServices.NFloat" Index="0" FrameworkAlternate="net-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <summary>Computes the sine of a value that has been multiplied by <c>pi</c>.</summary>
+        <returns>The sine of <paramref name="x" /> multiplied-by <c>pi</c>.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This computes `sin(x * π)`.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -4492,6 +4827,7 @@ It is recommended that a function return `1`, `0`, and `-1`, respectively.
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
+      <Parameters />
       <Docs>
         <summary>Gets the number of bytes that will be written as part of <see cref="M:System.Numerics.IFloatingPoint`1.TryWriteExponentLittleEndian(System.Span{System.Byte},System.Int32@)" />.</summary>
         <returns>The number of bytes that will be written as part of <see cref="M:System.Numerics.IFloatingPoint`1.TryWriteExponentLittleEndian(System.Span{System.Byte},System.Int32@)" />.</returns>
@@ -4516,6 +4852,7 @@ It is recommended that a function return `1`, `0`, and `-1`, respectively.
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
+      <Parameters />
       <Docs>
         <summary>Gets the length, in bits, of the shortest two's complement representation of the current exponent.</summary>
         <returns>The length, in bits, of the shortest two's complement representation of the current exponent.</returns>
@@ -4540,6 +4877,7 @@ It is recommended that a function return `1`, `0`, and `-1`, respectively.
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
+      <Parameters />
       <Docs>
         <summary>Gets the length, in bits, of the current significand.</summary>
         <returns>The length, in bits, of the current significand.</returns>
@@ -4564,6 +4902,7 @@ It is recommended that a function return `1`, `0`, and `-1`, respectively.
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
+      <Parameters />
       <Docs>
         <summary>Gets the number of bytes that will be written as part of <see cref="M:System.Numerics.IFloatingPoint`1.TryWriteSignificandLittleEndian(System.Span{System.Byte},System.Int32@)" />.</summary>
         <returns>The number of bytes that will be written as part of <see cref="M:System.Numerics.IFloatingPoint`1.TryWriteSignificandLittleEndian(System.Span{System.Byte},System.Int32@)" />.</returns>
@@ -4719,7 +5058,15 @@ It is recommended that a function return `1`, `0`, and `-1`, respectively.
         <param name="x">To be added.</param>
         <summary>Computes the tangent of a value.</summary>
         <returns>The tangent of <paramref name="x" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This computes `tan(x)`.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Tanh">
@@ -4748,6 +5095,42 @@ It is recommended that a function return `1`, `0`, and `-1`, respectively.
         <summary>Computes the hyperbolic tangent of a value.</summary>
         <returns>The hyperbolic tangent of <paramref name="x" />.</returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TanPi">
+      <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.NFloat TanPi (System.Runtime.InteropServices.NFloat x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.InteropServices.NFloat TanPi(valuetype System.Runtime.InteropServices.NFloat x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.NFloat.TanPi(System.Runtime.InteropServices.NFloat)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TanPi (x As NFloat) As NFloat" />
+      <MemberSignature Language="F#" Value="static member TanPi : System.Runtime.InteropServices.NFloat -&gt; System.Runtime.InteropServices.NFloat" Usage="System.Runtime.InteropServices.NFloat.TanPi x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::InteropServices::NFloat TanPi(System::Runtime::InteropServices::NFloat x) = System::Numerics::ITrigonometricFunctions&lt;System::Runtime::InteropServices::NFloat&gt;::TanPi;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Numerics.ITrigonometricFunctions`1.TanPi(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.NFloat</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Runtime.InteropServices.NFloat" Index="0" FrameworkAlternate="net-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <summary>Computes the tangent of a value that has been multipled by <c>pi</c>.</summary>
+        <returns>The tangent of <paramref name="x" /> multiplied-by <c>pi</c>.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This computes `tan(x * π)`.
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Tau">
@@ -4790,6 +5173,7 @@ It is recommended that a function return `1`, `0`, and `-1`, respectively.
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
+      <Parameters />
       <Docs>
         <summary>Converts the numeric value of this instance to its equivalent string representation.</summary>
         <returns>The string representation of the value of this instance.</returns>

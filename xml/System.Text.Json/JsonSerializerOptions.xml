@@ -824,6 +824,47 @@ Use <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve> to enable un
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="TypeInfoResolver">
+      <MemberSignature Language="C#" Value="public System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver TypeInfoResolver { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver TypeInfoResolver" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Json.JsonSerializerOptions.TypeInfoResolver" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeInfoResolver As IJsonTypeInfoResolver" />
+      <MemberSignature Language="F#" Value="member this.TypeInfoResolver : System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver with get, set" Usage="System.Text.Json.JsonSerializerOptions.TypeInfoResolver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Json::Serialization::Metadata::IJsonTypeInfoResolver ^ TypeInfoResolver { System::Text::Json::Serialization::Metadata::IJsonTypeInfoResolver ^ get(); void set(System::Text::Json::Serialization::Metadata::IJsonTypeInfoResolver ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-7.0">
+          <AttributeName Language="C#">[get: System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="net-7.0">
+          <AttributeName Language="C#">[get: System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Text.Json.Serialization.Metadata.JsonTypeInfo" /> contract resolver used by this instance.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+A `null` setting is equivalent to using the reflection-based <xref:System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver>.
+            The property will be populated automatically once used with one of the <xref:System.Text.Json.JsonSerializer> methods.
+
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The property is set after serialization or deserialization has occurred.</exception>
+      </Docs>
+    </Member>
     <Member MemberName="UnknownTypeHandling">
       <MemberSignature Language="C#" Value="public System.Text.Json.Serialization.JsonUnknownTypeHandling UnknownTypeHandling { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Text.Json.Serialization.JsonUnknownTypeHandling UnknownTypeHandling" />

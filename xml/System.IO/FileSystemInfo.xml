@@ -1622,5 +1622,56 @@ There are too many levels of symbolic links.</exception>
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="UnixFileMode">
+      <MemberSignature Language="C#" Value="public System.IO.UnixFileMode UnixFileMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.UnixFileMode UnixFileMode" />
+      <MemberSignature Language="DocId" Value="P:System.IO.FileSystemInfo.UnixFileMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property UnixFileMode As UnixFileMode" />
+      <MemberSignature Language="F#" Value="member this.UnixFileMode : System.IO.UnixFileMode with get, set" Usage="System.IO.FileSystemInfo.UnixFileMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::UnixFileMode UnixFileMode { System::IO::UnixFileMode get(); void set(System::IO::UnixFileMode value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-7.0">
+          <AttributeName Language="C#">[set: System.Runtime.Versioning.UnsupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.Versioning.UnsupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IO.UnixFileMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Unix file mode for the current file or directory.</summary>
+        <value>
+          <see cref="T:System.IO.UnixFileMode" /> of the current <see cref="T:System.IO.FileSystemInfo" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+The value may be cached when either the value itself or other <xref:System.IO.FileSystemInfo> properties are accessed. To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh> method.
+            
+If the path doesn't exist as of the last cached state, the return value is `(UnixFileMode)(-1)`. <xref:System.IO.FileNotFoundException> or <xref:System.IO.DirectoryNotFoundException> can only be thrown when setting the value.
+
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The file mode is invalid.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified path exceeds the system-defined maximum length.</exception>
+        <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid. Only thrown when setting the property value.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The specified file doesn't exist. Only thrown when setting the property value.</exception>
+        <exception cref="T:System.IO.IOException">
+          <see cref="M:System.IO.FileSystemInfo.Refresh" /> cannot initialize the data.</exception>
+      </Docs>
+    </Member>
   </Members>
 </Type>
